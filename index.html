@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GPA Calculator - Liquid Glass</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="gradient">
+
+<div class="header">
+    <h1>GPA Calculator</h1>
+</div>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="Style">
+            <label>Course Name</label>
+            <input type="text" id="courseName" class="input" placeholder="Optional">
+        </div>
+
+        <div class="Style">
+            <label>Course Grade</label>
+            <select class="input" id="grade">
+                <option>A+</option>
+                <option>A</option>
+                <option>B+</option>
+                <option>B</option>
+                <option>C+</option>
+                <option>C</option>
+                <option>D+</option>
+                <option>D</option>
+                <option>F</option>
+            </select>
+        </div>
+
+        <button onclick="addCourse()">Add Course</button>
+
+        <h2>Your GPA</h2>
+        <h1 id="gpa">0.00</h1>
+
+        <ul id="courseList"></ul>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
